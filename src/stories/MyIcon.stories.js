@@ -27,7 +27,7 @@ export const PrimaryIcon = {
       setup() {
         return { args }
       },
-      template: <MyIcon v-bind="args" />
+      template: `<MyIcon v-bind="args" />`
     }
   },
   args: {}

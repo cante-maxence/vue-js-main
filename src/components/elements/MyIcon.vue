@@ -1,5 +1,6 @@
 <template>
-
+<IconCommunity/>
+<IconDocumentation/>
 </template>
 
 <script setup>
