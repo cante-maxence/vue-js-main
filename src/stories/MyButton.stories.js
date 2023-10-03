@@ -37,17 +37,7 @@ export const PrimaryButton = {
 }
 
 export const SecondaryButton = {
-  render: (args) => {
-    return {
-      components: {
-        MyButton
-      },
-      setup() {
-        return { args }
-      },
-      template: `<MyButton v-bind="args">My link Button</MyButton>`
-    }
-  },
+  ...PrimaryButton,
   args: {
     size: 'regular',
     variant: 'rounded'
@@ -55,17 +45,7 @@ export const SecondaryButton = {
 }
 
 export const SmallPrimaryButton = {
-  render: (args) => {
-    return {
-      components: {
-        MyButton
-      },
-      setup() {
-        return { args }
-      },
-      template: `<MyButton v-bind="args">My link Button</MyButton>`
-    }
-  },
+  ...PrimaryButton,
   args: {
     size: 'small',
     variant: 'default'
@@ -73,17 +53,7 @@ export const SmallPrimaryButton = {
 }
 
 export const SmallSecondaryButton = {
-  render: (args) => {
-    return {
-      components: {
-        MyButton
-      },
-      setup() {
-        return { args }
-      },
-      template: `<MyButton v-bind="args">My link Button</MyButton>`
-    }
-  },
+  ...PrimaryButton,
   args: {
     size: 'small',
     variant: 'rounded'

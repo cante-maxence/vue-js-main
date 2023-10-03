@@ -2,7 +2,6 @@
 import { computed } from "vue"
 const props = defineProps({
   href: String,
-  size: String,
   variant: String
 })
 /* J'ai corrigé cette partie après le cours avec une gestion des classes beaucoup plus simple. 
@@ -39,6 +38,7 @@ const className = computed(() => ({
   }
   &.-small {
     font-size: $small;
+    border-radius: rem(25);
     padding: rem(14) rem(29);
     font-weight: 400;
   }

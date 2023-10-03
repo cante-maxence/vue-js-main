@@ -4,9 +4,13 @@ export default {
   title: 'Elements/MyButtonSlide',
   component: MyButtonSlide,
   argTypes: {
-    size: {
+    variant: {
       control: 'select',
       options: ['default', 'orange']
+    },
+    svg: {
+      control: 'select',
+      options: ['default', 'white']
     }
   }
 }
@@ -24,7 +28,8 @@ export const PrimaryButtonSlide = {
     }
   },
   args: {
-    size: 'default'
+    variant: 'default',
+    svg: 'default'
   }
 }
 
@@ -41,6 +46,7 @@ export const SecondaryButtonSlide = {
     }
   },
   args: {
-    size: 'orange'
+    variant: 'orange',
+    svg: 'white'
   }
 }
