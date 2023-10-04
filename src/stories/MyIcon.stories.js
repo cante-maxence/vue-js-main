@@ -1,24 +1,32 @@
-import MyIcon from '../components/elements/MyIcon.vue'
+import MyIcon from '@/components/elements/MyIcon.vue'
 
 export default {
   title: 'Elements/MyIcon',
   component: MyIcon,
   argTypes: {
-    href: {
-      control: 'text'
-    },
-    size: {
+    name: {
       control: 'select',
-      options: ['regular', 'small']
+      options: [
+        'community',
+        'documentation',
+        'ecosystem',
+        'support',
+        'tooling',
+        'truck',
+        'twitter',
+        'ln',
+        'insta',
+        'fb'
+      ]
     },
-    variant: {
+    color: {
       control: 'select',
-      options: ['default', 'rounded']
+      options: ['orange', 'default', 'light-orange', 'black']
     }
   }
 }
 
-export const PrimaryIcon = {
+export const Icon = {
   render: (args) => {
     return {
       components: {

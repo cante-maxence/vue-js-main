@@ -31,12 +31,12 @@ const className = computed(() => ({
 .button {
   background-color: $white;
   border: none;
-  border-radius: rem(15);
+  border-radius: 100%;
   display: inline-block;
   color: $primary-color;
   font-size: $regular-font-size;
   font-weight: 600;
-  padding: rem(33) rem(67);
+  padding: 1rem;
   text-decoration: none;
   word-wrap: break-word;
 
